@@ -1,0 +1,415 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1622"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_FDDBA952_32D5_4cf9_A835_0EFBC35802AD" name="Core Types" visibility="public">
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_17309160_88F3_4bfe_95AA_C8E8DBF1AC25" name="Error" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_1530C170_F354_4a34_917C_3186DCBA772D" name="detail" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_F354_4a34_917C_3186DCBA772D" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002_F354_4a34_917C_3186DCBA772D" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FF69FFA1_5428_4252_B775_10F87F684376" name="type" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003_5428_4252_B775_10F87F684376" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000004_5428_4252_B775_10F87F684376" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_41F1F212_B544_44c3_93D3_785BAC4DBCD9" name="title" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005_B544_44c3_93D3_785BAC4DBCD9" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000006_B544_44c3_93D3_785BAC4DBCD9" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_892210D7_71AD_46f3_88B8_927A43718406" name="status" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007_71AD_46f3_88B8_927A43718406" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000008_71AD_46f3_88B8_927A43718406" value="1"/>
+					<type xmi:idref="EAJava_int"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_1FD3F140_C6F2_4b9f_8B12_C9CB653CA98A" name="instance" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009_C6F2_4b9f_8B12_C9CB653CA98A" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000010_C6F2_4b9f_8B12_C9CB653CA98A" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" name="Primitives" visibility="public">
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_73383101_232D_4d80_B7C0_FC4F266F6A4B" name="Boolean" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_3968924B_0A9E_4b6a_9BFA_41F6DF04CF8F" name="Byte" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_02057CAC_B2B5_48be_8B60_9523194145A3" name="Char" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_861A642B_1887_4e5d_8AF0_0516AC5E9756" name="Date" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_590AB0A5_C722_4aa2_A1F5_0246962A512C" name="DateTime" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_3678DCE5_6D2E_4b81_AE7A_3E5C6A7F67BC" name="Double" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_674C8CD0_7A27_41d9_96E4_07F30ED6976A" name="Fixed" visibility="public">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_748249B2_0D79_4956_A075_3819863362B3" name="size" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+						<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_0D79_4956_A075_3819863362B3" value="1"/>
+						<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000012_0D79_4956_A075_3819863362B3" value="1"/>
+						<type xmi:idref="EAJava_int"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_921F8847_3D34_4f5b_82EA_BA728B507E66" name="Float" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_D47F4C8D_96A3_40f5_A854_9F9AF5A9710A" name="ID" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_BFE6C7B0_9B2A_45b7_B2E6_C02FC7C34CDA" name="Int" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_7A911D76_4AD3_43ab_B18D_E88547653AFB" name="Long" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_2FBDE1CF_B50C_4d0f_953C_9FCF51D2BAF4" name="Short" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_62E0C380_C021_4edb_8E48_D46BBD4C0900" name="String" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_A8104BB5_5DC6_45b3_8E23_D0DE48B0004B" name="UNDEFINED" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_35C65090_3331_464b_8C3B_273E7DD7F6FA" name="URI" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_76F2F48E_360C_4a16_BF8E_8B5737F69A1F" name="UUID" visibility="public"/>
+				<packagedElement xmi:type="uml:DataType" xmi:id="EAID_BF9107B3_2CA8_4776_98DF_367DC249B48C" name="Void" visibility="public"/>
+			</packagedElement>
+		</packagedElement>
+		<thecustomprofile:primitive base_DataType="EAID_73383101_232D_4d80_B7C0_FC4F266F6A4B"/>
+		<thecustomprofile:primitive base_DataType="EAID_3968924B_0A9E_4b6a_9BFA_41F6DF04CF8F"/>
+		<thecustomprofile:primitive base_DataType="EAID_02057CAC_B2B5_48be_8B60_9523194145A3"/>
+		<thecustomprofile:primitive base_DataType="EAID_861A642B_1887_4e5d_8AF0_0516AC5E9756"/>
+		<thecustomprofile:primitive base_DataType="EAID_590AB0A5_C722_4aa2_A1F5_0246962A512C"/>
+		<thecustomprofile:primitive base_DataType="EAID_3678DCE5_6D2E_4b81_AE7A_3E5C6A7F67BC"/>
+		<thecustomprofile:primitive base_DataType="EAID_674C8CD0_7A27_41d9_96E4_07F30ED6976A"/>
+		<thecustomprofile:primitive base_DataType="EAID_921F8847_3D34_4f5b_82EA_BA728B507E66"/>
+		<thecustomprofile:primitive base_DataType="EAID_D47F4C8D_96A3_40f5_A854_9F9AF5A9710A"/>
+		<thecustomprofile:primitive base_DataType="EAID_BFE6C7B0_9B2A_45b7_B2E6_C02FC7C34CDA"/>
+		<thecustomprofile:primitive base_DataType="EAID_7A911D76_4AD3_43ab_B18D_E88547653AFB"/>
+		<thecustomprofile:primitive base_DataType="EAID_2FBDE1CF_B50C_4d0f_953C_9FCF51D2BAF4"/>
+		<thecustomprofile:primitive base_DataType="EAID_62E0C380_C021_4edb_8E48_D46BBD4C0900"/>
+		<thecustomprofile:primitive base_DataType="EAID_A8104BB5_5DC6_45b3_8E23_D0DE48B0004B"/>
+		<thecustomprofile:primitive base_DataType="EAID_35C65090_3331_464b_8C3B_273E7DD7F6FA"/>
+		<thecustomprofile:primitive base_DataType="EAID_76F2F48E_360C_4a16_BF8E_8B5737F69A1F"/>
+		<thecustomprofile:primitive base_DataType="EAID_BF9107B3_2CA8_4776_98DF_367DC249B48C"/>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_FDDBA952_32D5_4cf9_A835_0EFBC35802AD" xmi:type="uml:Package" name="Core Types" scope="public">
+				<model package2="EAID_FDDBA952_32D5_4cf9_A835_0EFBC35802AD" package="EAPK_9BFCA1C0_80DF_44e4_BD7E_0A07CC679EF6" tpos="0" ea_localid="3" ea_eleType="package"/>
+				<properties documentation="Updated to add Error type" isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="martin" version="1.1" phase="1.0" created="2023-01-26 09:25:10" modified="2023-01-27 11:06:14" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Model"/>
+				<packageproperties version="1.1" owner="martin" xmiver="Enterprise Architect XMI 2.1/UML 2.1" tpos="0"/>
+				<paths xmlpath="C:\Users\martin\Projects\models\core-types\core-types.xml"/>
+				<times created="2023-01-26 09:25:10" modified="2024-04-18 17:28:29" lastloaddate="2024-04-18 17:28:28" lastsavedate="2024-04-21 16:20:42"/>
+				<flags iscontrolled="1" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0" packageFlags="isModel=1;VICON=3;Recurse=1;"/>
+			</element>
+			<element xmi:idref="EAID_17309160_88F3_4bfe_95AA_C8E8DBF1AC25" xmi:type="uml:DataType" name="Error" scope="public">
+				<model package="EAPK_FDDBA952_32D5_4cf9_A835_0EFBC35802AD" tpos="0" ea_localid="16" ea_eleType="element"/>
+				<properties documentation="An RFC 7807 compliant type to report an error to the client." isSpecification="false" sType="DataType" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-02-13 08:27:00" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Core Types"/>
+				<attributes>
+					<attribute xmi:idref="EAID_1530C170_F354_4a34_917C_3186DCBA772D" name="detail" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="14" ea_guid="{1530C170-F354-4a34-917C-3186DCBA772D}"/>
+						<properties type="String" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_FF69FFA1_5428_4252_B775_10F87F684376" name="type" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="18" ea_guid="{FF69FFA1-5428-4252-B775-10F87F684376}"/>
+						<properties type="String" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_41F1F212_B544_44c3_93D3_785BAC4DBCD9" name="title" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="17" ea_guid="{41F1F212-B544-44c3-93D3-785BAC4DBCD9}"/>
+						<properties type="String" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_892210D7_71AD_46f3_88B8_927A43718406" name="status" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="16" ea_guid="{892210D7-71AD-46f3-88B8-927A43718406}"/>
+						<properties type="int" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="3"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_1FD3F140_C6F2_4b9f_8B12_C9CB653CA98A" name="instance" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="15" ea_guid="{1FD3F140-C6F2-4b9f-8B12-C9CB653CA98A}"/>
+						<properties type="String" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="4"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+			</element>
+			<element xmi:idref="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" xmi:type="uml:Package" name="Primitives" scope="public">
+				<model package2="EAID_11865AA0_5CE9_4cbd_BD49_F156817C4864" package="EAPK_FDDBA952_32D5_4cf9_A835_0EFBC35802AD" tpos="0" ea_localid="4" ea_eleType="package"/>
+				<properties documentation="Initial version of Primitive types library." isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="martin" version="1.0" phase="1.0" created="2023-01-26 09:23:41" modified="2023-01-26 09:25:13" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Core Types"/>
+				<packageproperties version="1.0" tpos="0"/>
+				<paths/>
+				<times created="2023-01-26 09:23:41" modified="2024-04-18 17:28:29" lastloaddate="2024-04-18 17:28:28" lastsavedate="2024-04-18 17:28:28"/>
+				<flags iscontrolled="0" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0" packageFlags="isModel=1;"/>
+			</element>
+			<element xmi:idref="EAID_73383101_232D_4d80_B7C0_FC4F266F6A4B" xmi:type="uml:DataType" name="Boolean" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="18" ea_eleType="element"/>
+				<properties documentation="A representation of objects that can have two values: true and false." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-10 12:05:29" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={7F38FA16-DBB1-4de6-9DEB-BB2A8E28AF40}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={73383101-232D-4d80-B7C0-FC4F266F6A4B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_3968924B_0A9E_4b6a_9BFA_41F6DF04CF8F" xmi:type="uml:DataType" name="Byte" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="19" ea_eleType="element"/>
+				<properties documentation="A signed 8-bit integer, ranges from -128 to 127" isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-12-09 08:39:59" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={20164AFA-7723-4b0e-9C37-942ACB2EC857}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={3968924B-0A9E-4b6a-9BFA-41F6DF04CF8F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_02057CAC_B2B5_48be_8B60_9523194145A3" xmi:type="uml:DataType" name="Char" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="20" ea_eleType="element"/>
+				<properties documentation="An single character." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-12-09 08:59:56" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={129EAADD-67CF-4ae1-AAF5-42637B4E549A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={02057CAC-B2B5-48be-8B60-9523194145A3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_861A642B_1887_4e5d_8AF0_0516AC5E9756" xmi:type="uml:DataType" name="Date" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="21" ea_eleType="element"/>
+				<properties documentation="An ISO 8601 standard representation of a date." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-17 12:15:02" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={18B23EDE-DFB0-4bb8-B965-19BDA0019F22}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={861A642B-1887-4e5d-8AF0-0516AC5E9756}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_590AB0A5_C722_4aa2_A1F5_0246962A512C" xmi:type="uml:DataType" name="DateTime" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="22" ea_eleType="element"/>
+				<properties documentation="An ISO 8601 standard representation of a date &amp;amp; time." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-06-18 12:43:01" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={A4E77DE3-B151-4b7a-B9B2-AEBE26B3419F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={590AB0A5-C722-4aa2-A1F5-0246962A512C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_3678DCE5_6D2E_4b81_AE7A_3E5C6A7F67BC" xmi:type="uml:DataType" name="Double" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="23" ea_eleType="element"/>
+				<properties documentation="A 64-bit floating point number that adheres to the IEEE 754 double-precision standard .&#xA;" isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-12-09 08:40:42" modified="2024-04-18 17:28:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={335D4934-F48A-4310-A6BE-5057F69AC18D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={3678DCE5-6D2E-4b81-AE7A-3E5C6A7F67BC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_674C8CD0_7A27_41d9_96E4_07F30ED6976A" xmi:type="uml:DataType" name="Fixed" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="24" ea_eleType="element"/>
+				<properties documentation="Representation of fractional number using integer with defined specific number of bits reserved for the integer part and a specific number of bits reserved for the fractional part." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-11 09:05:02" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={29FFF9DE-E019-4eee-A7F6-F21F6CA10C2E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={674C8CD0-7A27-41d9-96E4-07F30ED6976A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+				<attributes>
+					<attribute xmi:idref="EAID_748249B2_0D79_4956_A075_3819863362B3" name="size" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="19" ea_guid="{748249B2-0D79-4956-A075-3819863362B3}"/>
+						<properties type="int" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+			</element>
+			<element xmi:idref="EAID_921F8847_3D34_4f5b_82EA_BA728B507E66" xmi:type="uml:DataType" name="Float" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="25" ea_eleType="element"/>
+				<properties documentation="A 32-bit floating point number that adheres to the IEEE 754 single-precision standard ." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-10 12:04:31" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={F0BD22AE-F55C-492c-82AA-9E21A694C9FC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={921F8847-3D34-4f5b-82EA-BA728B507E66}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_D47F4C8D_96A3_40f5_A854_9F9AF5A9710A" xmi:type="uml:DataType" name="ID" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="26" ea_eleType="element"/>
+				<properties documentation="A unique identifier within the scope of the relevant instance." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2022-01-05 05:32:09" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={3A80369D-8BDB-4d38-9F01-1548179059F9}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={D47F4C8D-96A3-40f5-A854-9F9AF5A9710A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_BFE6C7B0_9B2A_45b7_B2E6_C02FC7C34CDA" xmi:type="uml:DataType" name="Int" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="27" ea_eleType="element"/>
+				<properties documentation="A signed 32-bit integer, ranges from --2,147,483,648 to 2,147,483,647&#xA;" isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-10 12:04:40" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={7F622499-0362-4b40-90DB-99C661A76C3B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={BFE6C7B0-9B2A-45b7-B2E6-C02FC7C34CDA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_7A911D76_4AD3_43ab_B18D_E88547653AFB" xmi:type="uml:DataType" name="Long" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="28" ea_eleType="element"/>
+				<properties documentation="A signed 64-bit integer, ranges from -9,223,372,036,854,775,808 to9,223,372,036,854,775,807" isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-12-09 08:40:32" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={01CA884A-B4A8-4f7d-BDF5-09EACEDEE770}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={7A911D76-4AD3-43ab-B18D-E88547653AFB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_2FBDE1CF_B50C_4d0f_953C_9FCF51D2BAF4" xmi:type="uml:DataType" name="Short" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="29" ea_eleType="element"/>
+				<properties documentation="A signed 16-bit integer, ranges from -32768 to 32767&#xA;" isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-12-09 08:39:45" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={E6320E0A-DD08-47e9-85DE-F2C8B6795BEE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={2FBDE1CF-B50C-4d0f-953C-9FCF51D2BAF4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_62E0C380_C021_4edb_8E48_D46BBD4C0900" xmi:type="uml:DataType" name="String" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="30" ea_eleType="element"/>
+				<properties documentation="A sequence of characters." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-10-11 09:11:10" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={EDA9E25B-9C82-4016-BF5F-54DD0D20482E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={62E0C380-C021-4edb-8E48-D46BBD4C0900}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_A8104BB5_5DC6_45b3_8E23_D0DE48B0004B" xmi:type="uml:DataType" name="UNDEFINED" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="31" ea_eleType="element"/>
+				<properties documentation="Used by the Model Transform Tools (MTT) to show where no type has been defined within a UML model." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2022-01-16 13:22:12" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={D4ABE554-8D18-47fa-A0AB-49E5263A1272}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={A8104BB5-5DC6-45b3-8E23-D0DE48B0004B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_35C65090_3331_464b_8C3B_273E7DD7F6FA" xmi:type="uml:DataType" name="URI" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="32" ea_eleType="element"/>
+				<properties documentation="A representation of a Uniform Resource Identifier." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-06-18 12:43:17" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={89C7B442-E72D-4590-B755-C9B84C2E9F86}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={35C65090-3331-464b-8C3B-273E7DD7F6FA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_76F2F48E_360C_4a16_BF8E_8B5737F69A1F" xmi:type="uml:DataType" name="UUID" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="33" ea_eleType="element"/>
+				<properties documentation="A Universally Unique Identifier." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-06-18 12:43:10" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={395A09B4-6EC5-4c90-BA10-9D54309AAF9F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={76F2F48E-360C-4a16-BF8E-8B5737F69A1F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+			<element xmi:idref="EAID_BF9107B3_2CA8_4776_98DF_367DC249B48C" xmi:type="uml:DataType" name="Void" scope="public">
+				<model package="EAPK_11865AA0_5CE9_4cbd_BD49_F156817C4864" tpos="0" ea_localid="34" ea_eleType="element"/>
+				<properties documentation="A void or null type. Often used as the return type for a function that does not return a defined type." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="primitive" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="Martin" version="1.0" phase="1.0" created="2021-11-18 20:06:40" modified="2024-04-18 17:28:29" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={F8689B60-5498-4cbf-90A4-DFD16EDB33A2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=primitive;GUID={1BDB182E-B252-4d22-B114-EA3466C29A91};@ENDSTEREO;$DES;$CLT={BF9107B3-2CA8-4776-98DF-367DC249B48C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Primitives"/>
+			</element>
+		</elements>
+		<connectors/>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public">
+				<packagedElement xmi:type="uml:Package" xmi:id="EAJavaTypesPackage" name="EA_Java_Types_Package" visibility="public">
+					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_String" name="String" visibility="public"/>
+					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_int" name="int" visibility="public">
+						<generalization xmi:type="uml:Generalization" xmi:id="EAJava_int_General">
+							<general href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+						</generalization>
+					</packagedElement>
+				</packagedElement>
+			</packagedElement>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
+					<body> Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="primitive" name="primitive">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="primitive-base_DataType" name="base_DataType" association="DataType_primitive">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_primitive" name="A_DataType_primitive" memberEnd="extension_primitive primitive-base_DataType">
+					<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="extension_primitive" name="extension_primitive" type="primitive" isComposite="true" lower="0" upper="1" memberEnd="extension_primitive primitive-base_DataType"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams/>
+	</xmi:Extension>
+</xmi:XMI>
